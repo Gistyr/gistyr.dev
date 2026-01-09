@@ -42,9 +42,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
-        {children}
+        <header className="h-[10vh] border-b border-white">
+          {/* intentionally empty for now */}
+        </header>
+
+        <main className="min-h-[90vh]">
+          {children}
+        </main>
       </body>
     </html>
   );
