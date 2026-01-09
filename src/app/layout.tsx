@@ -1,3 +1,20 @@
+////////// START OF FILE //////////
+/**
+ * gistyr.dev
+ *
+ * Copyright (c) 2026 Gistyr LLC
+ *
+ * Licensed under the PolyForm Internal Use License 1.0.0
+ * See LICENSES/LICENSE-POLYFORM-INTERNAL-USE.md or
+ * https://polyformproject.org/licenses/internal-use/1.0.0/
+ *
+ * Required Notice: Copyright Gistyr LLC (https://gistyr.dev)
+ *
+ * For full license texts, see:
+ * LICENSES/
+*/
+// ---------------------------------------- //
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -32,3 +49,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+/////////// END OF FILE ///////////
