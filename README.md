@@ -10,6 +10,5 @@ This project is licensed under the [PolyForm Internal Use License 1.0.0](https:/
 - **This code is source-available, not open source.**
 #### For full license text: 
 See `LICENSE-POLYFORM-INTERNAL-USE.md` or visit: <https://polyformproject.org/licenses/internal-use/1.0.0/>  
-> This repository is published for transparency and auditing purposes only.
-> No permission is granted to reuse, redistribute, or deploy this code.
-> outside of its original website.
+> This repository is published for transparency and auditing purposes only.          
+> No permission is granted to reuse, redistribute, or deploy this code outside of its original website.         
