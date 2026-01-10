@@ -22,7 +22,8 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p className="text-xl">Gistyr is developing an online, multiplayer, skill-based board game.</p>
+        <p className="text-xl">The open beta will be released on the web in November 2026.</p>
       </>
     ),
   },
@@ -32,7 +33,8 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p>Gistyr is developing an online, multiplayer, skill-based board game.</p>
+        <p>The open beta will be released on the web in November 2026.</p>
       </>
     ),
   },
@@ -42,7 +44,25 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p>Gistyr's primary product will be powered by proprietary, multiplayer server infrastructure.</p>
+        <p>The open beta will be released on the web in November 2026.</p>
+        <div className="h-6" />
+        <p>One of Gistyr's open source projects, <span className="font-medium">GOBSG</span>, is a secure OpenID Connect Backend-for-Frontend (BFF) gateway.</p>
+        <p>It provides cookie-based session management for web clients and is written in Rust.</p>
+        <a
+          href="https://gistyr.dev/gobsg"
+          className="
+            inline-block
+            text-sm
+            text-blue-400
+            hover:text-blue-300
+            underline
+            underline-offset-4
+            transition-colors
+          "
+        >
+          Click here for more details →
+        </a>
       </>
     ),
   },
