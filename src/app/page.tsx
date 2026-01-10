@@ -15,16 +15,44 @@
 */
 // ---------------------------------------- //
 
+const LINES: string[] = [
+  "Game development",
+  "Web development",
+  "Proprietary software",
+  "Open source software",
+  "Rust programming",
+  "Typescript programming",
+  "Sole proprietorship",
+  "100% bootstrapped",
+  "100% independent",
+  "USA based",
+];
+
 export default function Home() {
   return (
-    <main className="mx-[10%] flex flex-col items-center justify-center min-h-[90vh] text-center">
-      <h1 className="text-3xl font-semibold tracking-tight">
-        Gistyr
-      </h1>
+    <main className="mx-[10%] min-h-[90vh]">
+      {/* small buffer below header */}
+      <div className="h-10" />
 
-      <p className="mt-2 text-sm text-zinc-400">
-        contact@gistyr.dev
-      </p>
+      {/* main content */}
+      <div className="flex flex-col items-center text-center">
+        <div className="w-full max-w-5xl flex flex-col gap-8">
+          {LINES.map((line) => (
+            <h1
+              key={line}
+              className="
+                whitespace-nowrap
+                font-semibold
+                tracking-tight
+                leading-[0.95]
+                text-[clamp(2.25rem,5.5vw,4.75rem)]
+              "
+            >
+              {line}
+            </h1>
+          ))}
+        </div>
+      </div>
     </main>
   );
 }
