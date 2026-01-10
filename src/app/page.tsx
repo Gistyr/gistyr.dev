@@ -18,6 +18,7 @@
 const LINES: string[] = [
   "Game development",
   "Web development",
+  "Server development",
   "Proprietary software",
   "Open source software",
   "Rust programming",
@@ -31,28 +32,42 @@ const LINES: string[] = [
 export default function Home() {
   return (
     <main className="mx-[10%] min-h-[90vh]">
-      {/* small buffer below header */}
       <div className="h-10" />
-
-      {/* main content */}
       <div className="flex flex-col items-center text-center">
         <div className="w-full max-w-5xl flex flex-col gap-8">
-          {LINES.map((line) => (
-            <h1
-              key={line}
-              className="
-                whitespace-nowrap
-                font-semibold
-                tracking-tight
-                leading-[0.95]
-                text-[clamp(2.25rem,5.5vw,4.75rem)]
-              "
-            >
-              {line}
-            </h1>
-          ))}
+          {LINES.map((line, i) => {
+            const h1 = (i * 37) % 360;
+            const h2 = (h1 + 120) % 360;
+            const h3 = (h1 + 240) % 360;
+            return (
+              <h1
+                key={line}
+                className="
+                  chromatic-line
+                  whitespace-nowrap
+                  font-semibold
+                  tracking-tight
+                  leading-[0.95]
+                  text-[clamp(2.25rem,5.5vw,4.75rem)]
+                "
+                style={{
+                  backgroundImage: `linear-gradient(90deg,
+                    hsl(${h1} 100% 65%),
+                    hsl(${h2} 100% 65%),
+                    hsl(${h3} 100% 65%),
+                    hsl(${h1} 100% 65%)
+                  )`,
+                  animationDuration: `${6 + (i % 5)}s`,
+                  animationDelay: `${-0.35 * i}s`,
+                }}
+              >
+                {line}
+              </h1>
+            );
+          })}
         </div>
       </div>
+      <div className="h-10" />
     </main>
   );
 }
