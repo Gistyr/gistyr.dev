@@ -15,8 +15,6 @@
 */
 // ---------------------------------------- //
 
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="mx-[10%] flex flex-col items-center justify-center min-h-[90vh] text-center">

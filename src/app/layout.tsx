@@ -42,15 +42,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white min-h-screen flex flex-col`}
       >
-        <header className="h-[10vh] border-b border-white">
+        <header className="h-[10vh] shrink-0 border-b border-white">
           {/* intentionally empty for now */}
         </header>
 
-        <main className="min-h-[90vh]">
+        <main className="flex-1">
           {children}
         </main>
+
+        <footer className="h-16 shrink-0 border-t border-white flex items-center justify-center text-xs">
+          © {new Date().getFullYear()} Gistyr LLC
+        </footer>
       </body>
     </html>
   );
