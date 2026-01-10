@@ -44,11 +44,13 @@ export default function Home() {
                 key={line}
                 className="
                   chromatic-line
-                  whitespace-nowrap
+                  wrap-break-words
+                  text-balance
                   font-semibold
                   tracking-tight
                   leading-[0.95]
-                  text-[clamp(2.25rem,5.5vw,4.75rem)]
+                  text-[min(11vw,4.75rem)]
+                  sm:text-[min(7.5vw,4.75rem)]
                 "
                 style={{
                   backgroundImage: `linear-gradient(90deg,
