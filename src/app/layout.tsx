@@ -44,8 +44,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white min-h-screen flex flex-col`}
       >
-        <header className="h-[10vh] shrink-0 border-b border-white">
-          {/* intentionally empty for now */}
+        <header className="h-[10vh] shrink-0 border-b border-white flex items-center px-6">
+          <div className="flex w-full justify-between items-center">
+            <span className="text-lg font-semibold tracking-tight">
+              Gistyr
+            </span>
+
+            <span className="text-sm text-zinc-300">
+              contact@gistyr.dev
+            </span>
+          </div>
         </header>
 
         <main className="flex-1">
