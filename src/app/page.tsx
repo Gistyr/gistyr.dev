@@ -47,7 +47,7 @@ const LINES = [
         <p className="text-lg lg:text-xl">Gistyr's primary product will be powered by proprietary, multiplayer server infrastructure.</p>
         <p className="text-lg lg:text-xl">The open beta will be released on the web in November 2026.</p>
         <div className="h-5" />
-        <p className="text-lg lg:text-xl">One of Gistyr's open source projects, <span className="font-medium">GOBSG</span>, is a secure OpenID Connect Backend-for-Frontend (BFF) gateway.</p>
+        <p className="text-lg lg:text-xl">One of Gistyr's open source software, <span className="font-medium">GOBSG</span>, is a secure OpenID Connect Backend-for-Frontend (BFF) gateway.</p>
         <p className="text-lg lg:text-xl">It provides cookie-based session management for web clients and is written in Rust.</p>
         <a
           href="https://gistyr.dev/gobsg"
@@ -170,20 +170,18 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <>
-          <p className="text-lg lg:text-xl">Gistyr is developing an online, multiplayer, skill-based board game.</p>
-          <p className="text-lg lg:text-xl">The open beta will be released on the web in November 2026.</p>
-        </>
+        <p className="text-lg lg:text-xl">All of Gistyr's open source software are written in Rust.</p>
+        <p className="text-lg lg:text-xl">The majority of Gistyr's proprietary software is written in Rust.</p>
       </>
     ),
   },
   {
-    title: "Typescript programming",
+    title: "TypeScript programming",
     panelClassName: "bg-black/20",
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p className="text-lg lg:text-xl">Portions of Gistyr's proprietary software are written in TypeScript.</p>
       </>
     ),
   },
@@ -193,7 +191,7 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p>Gistyr is a sole proprietorship LLC formed in the state of Virginia.</p>
       </>
     ),
   },
@@ -203,7 +201,7 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p>Gistyr is owned and funded by one person.</p>
       </>
     ),
   },
@@ -213,7 +211,7 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p>Gistyr is owned and funded by one person.</p>
       </>
     ),
   },
@@ -223,7 +221,7 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p>Gistyr is a sole proprietorship LLC formed in the state of Virginia.</p>
       </>
     ),
   },
