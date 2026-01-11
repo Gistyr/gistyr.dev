@@ -16,6 +16,25 @@
 // ---------------------------------------- //
 
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gistyr",
+  description: "Official website of Gistyr LLC",
+  alternates: { canonical: "https://gistyr.dev" },
+  openGraph: {
+    title: "Gistyr",
+    description: "Official website of Gistyr LLC",
+    url: "https://gistyr.dev",
+    siteName: "Gistyr",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gistyr",
+    description: "Official website of Gistyr LLC",
+  },
+};
 
 const LINES = [
   {

@@ -84,27 +84,29 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="h-16 shrink-0 border-t border-white flex items-center justify-center text-md">
-          <div className="mx-[10%] flex gap-6 items-center">
+        <footer className="shrink-0 border-t border-white">
+          <div className="mx-[10%] flex flex-col items-center justify-center gap-3 py-4 text-sm text-center md:flex-row md:justify-between md:gap-6 md:py-0 md:h-16 md:text-base">
             <span>© {new Date().getFullYear()} Gistyr LLC</span>
-            <Link
-              href="/contact"
-              className="hover:text-zinc-400 transition-colors underline underline-offset-4"
-            >
-              Contact
-            </Link>
-            <Link
-              href="/legal/privacypolicy"
-              className="hover:text-zinc-400 transition-colors underline underline-offset-4"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/legal/termsandconditions"
-              className="hover:text-zinc-400 transition-colors underline underline-offset-4"
-            >
-              Terms and Conditions
-            </Link>
+            <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+              <Link
+                href="/contact"
+                className="hover:text-zinc-400 transition-colors underline underline-offset-4"
+              >
+                Contact
+              </Link>
+              <Link
+                href="/legal/privacypolicy"
+                className="hover:text-zinc-400 transition-colors underline underline-offset-4"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/legal/termsandconditions"
+                className="hover:text-zinc-400 transition-colors underline underline-offset-4"
+              >
+                Terms and Conditions
+              </Link>
+            </nav>
           </div>
         </footer>
       </body>

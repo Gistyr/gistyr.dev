@@ -15,6 +15,15 @@
 */
 // ---------------------------------------- //
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
 export default async function Page() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gistyr.dev";
   const res = await fetch(`${baseUrl}/privacy-policy.html`, {
