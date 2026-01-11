@@ -15,6 +15,8 @@
 */
 // ---------------------------------------- //
 
+import Link from "next/link";
+
 const LINES = [
   {
     title: "Game development",
@@ -49,8 +51,8 @@ const LINES = [
         <div className="h-5" />
         <p className="text-lg lg:text-xl">One of Gistyr's open source software, <span className="font-medium">GOBSG</span>, is a secure OpenID Connect Backend-for-Frontend (BFF) gateway.</p>
         <p className="text-lg lg:text-xl">It provides cookie-based session management for web clients and is written in Rust.</p>
-        <a
-          href="https://gistyr.dev/gobsg"
+        <Link
+          href="/gobsg"
           className="
             inline-block
             text-md lg:text-lg
@@ -62,7 +64,7 @@ const LINES = [
           "
         >
           Click here for more details →
-        </a>
+        </Link>
       </>
     ),
   },
@@ -85,8 +87,8 @@ const LINES = [
       <>
         <p className="text-xl lg:text-2xl"><span className="font-medium">GOBSG</span></p>
         <p className="text-lg lg:text-xl">A secure OIDC Backend-for-Frontend gateway providing cookie-based session management for web clients.</p>
-        <a
-          href="https://gistyr.dev/gobsg"
+        <Link
+          href="/gobsg"
           className="
             inline-block
             text-md lg:text-lg
@@ -98,12 +100,12 @@ const LINES = [
           "
         >
           Click here for more details →
-        </a>
+        </Link>
         <div className="h-5" />
         <p className="text-xl lg:text-2xl"><span className="font-medium">better-logger</span></p>
         <p className="text-lg lg:text-xl">Flexible sync/async Rust logger with console, file, and http output.</p>
-        <a
-          href="https://gistyr.dev/betterlogger"
+        <Link
+          href="/betterlogger"
           className="
             inline-block
             text-md lg:text-lg
@@ -115,7 +117,7 @@ const LINES = [
           "
         >
           Click here for more details →
-        </a>
+        </Link>
         <div className="h-5" />
         <a
           href="https://github.com/Gistyr"

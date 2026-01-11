@@ -65,3 +65,21 @@ URL: https://www.npmjs.com/package/typescript
 SEE:
 LICENSE-APACHE
 ```
+
+```
+PACKAGE: react-markdown
+LICENSE: MIT
+URL: https://www.npmjs.com/package/react-markdown
+
+SEE:
+LICENSE-MIT
+```
+
+```
+PACKAGE: github-markdown-css
+LICENSE: MIT
+URL: https://www.npmjs.com/package/github-markdown-css
+
+SEE:
+LICENSE-MIT
+```
