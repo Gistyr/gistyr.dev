@@ -72,7 +72,8 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p className="text-lg lg:text-xl">Gistyr is developing an online, multiplayer, skill-based board game.</p>
+        <p className="text-lg lg:text-xl">The open beta will be released on the web in November 2026.</p>
       </>
     ),
   },
