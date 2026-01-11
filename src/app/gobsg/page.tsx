@@ -15,6 +15,7 @@
 */
 // ---------------------------------------- //
 
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
 export default async function Page() {
@@ -29,6 +30,13 @@ export default async function Page() {
 
   return (
     <main className="mx-[10%] min-h-[90vh] py-16">
+      <Link
+        href="/contact"
+        className="text-lg lg:text-xl hover:text-zinc-400 transition-colors underline underline-offset-4"
+      >
+        Request a commercial license by contacting us
+      </Link>
+      <div className="h-10" />
       <article className="markdown-body">
         <ReactMarkdown>{md}</ReactMarkdown>
       </article>
