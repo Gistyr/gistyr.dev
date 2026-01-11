@@ -28,7 +28,7 @@ export default async function Page() {
   const md = await res.text();
 
   return (
-    <main className="mx-[10%] min-h-[90vh]">
+    <main className="mx-[10%] min-h-[90vh] py-16">
       <article className="markdown-body">
         <ReactMarkdown>{md}</ReactMarkdown>
       </article>
