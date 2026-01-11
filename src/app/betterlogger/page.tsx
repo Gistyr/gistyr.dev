@@ -19,7 +19,7 @@ import ReactMarkdown from "react-markdown";
 
 export default async function Page() {
   const res = await fetch(
-    "https://raw.githubusercontent.com/Gistyr/GOBSG/main/README.md",
+    "https://raw.githubusercontent.com/Gistyr/better-logger/main/README.md",
     { cache: "no-store" }
   );
   if (!res.ok) {
