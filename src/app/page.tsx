@@ -46,7 +46,7 @@ const LINES = [
       <>
         <p className="text-lg lg:text-xl">Gistyr's primary product will be powered by proprietary, multiplayer server infrastructure.</p>
         <p className="text-lg lg:text-xl">The open beta will be released on the web in November 2026.</p>
-        <div className="h-6" />
+        <div className="h-5" />
         <p className="text-lg lg:text-xl">One of Gistyr's open source projects, <span className="font-medium">GOBSG</span>, is a secure OpenID Connect Backend-for-Frontend (BFF) gateway.</p>
         <p className="text-lg lg:text-xl">It provides cookie-based session management for web clients and is written in Rust.</p>
         <a
@@ -83,7 +83,84 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <p className="text-xl lg:text-2xl"><span className="font-medium">GOBSG</span></p>
+        <p className="text-lg lg:text-xl">A secure OIDC Backend-for-Frontend gateway providing cookie-based session management for web clients.</p>
+        <a
+          href="https://gistyr.dev/gobsg"
+          className="
+            inline-block
+            text-md lg:text-lg
+            text-blue-400
+            hover:text-blue-300
+            underline
+            underline-offset-4
+            transition-colors
+          "
+        >
+          Click here for more details →
+        </a>
+        <div className="h-5" />
+        <p className="text-xl lg:text-2xl"><span className="font-medium">better-logger</span></p>
+        <p className="text-lg lg:text-xl">Flexible sync/async Rust logger with console, file, and http output.</p>
+        <a
+          href="https://gistyr.dev/betterlogger"
+          className="
+            inline-block
+            text-md lg:text-lg
+            text-blue-400
+            hover:text-blue-300
+            underline
+            underline-offset-4
+            transition-colors
+          "
+        >
+          Click here for more details →
+        </a>
+        <div className="h-5" />
+        <a
+          href="https://github.com/Gistyr"
+          className="
+            inline-block
+            text-xl lg:text-2xl
+            text-blue-400
+            hover:text-blue-300
+            underline
+            underline-offset-4
+            transition-colors
+          "
+        >
+          Click here for Gistyr GitHub →
+        </a>
+        <div className="h-1" />
+        <a
+          href="https://crates.io/users/Lozlof"
+          className="
+            inline-block
+            text-xl lg:text-2xl
+            text-blue-400
+            hover:text-blue-300
+            underline
+            underline-offset-4
+            transition-colors
+          "
+        >
+          Click here for crates.io →
+        </a>
+        <div className="h-1" />
+        <a
+          href="https://github.com/Lozlof"
+          className="
+            inline-block
+            text-xl lg:text-2xl
+            text-blue-400
+            hover:text-blue-300
+            underline
+            underline-offset-4
+            transition-colors
+          "
+        >
+          Click here for personal GitHub →
+        </a>
       </>
     ),
   },
@@ -93,7 +170,10 @@ const LINES = [
     contentClassName: "space-y-2",
     content: (
       <>
-        <p>Example</p>
+        <>
+          <p className="text-lg lg:text-xl">Gistyr is developing an online, multiplayer, skill-based board game.</p>
+          <p className="text-lg lg:text-xl">The open beta will be released on the web in November 2026.</p>
+        </>
       </>
     ),
   },
