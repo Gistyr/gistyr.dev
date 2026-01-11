@@ -99,6 +99,12 @@ export default function RootLayout({
             >
               Privacy Policy
             </Link>
+            <Link
+              href="/legal/termsandconditions"
+              className="hover:text-zinc-400 transition-colors underline underline-offset-4"
+            >
+              Terms and Conditions
+            </Link>
           </div>
         </footer>
       </body>
