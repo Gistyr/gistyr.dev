@@ -42,4 +42,63 @@ body {
   100% { background-position: 0% 50%; filter: hue-rotate(0deg); }
 }
 
+.legal {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.legal h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+.legal h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  letter-spacing: -0.02em;
+}
+.legal h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.75rem;
+}
+.legal h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.legal p {
+  margin: 0.75rem 0;
+  line-height: 1.75rem;
+  font-size: 0.95rem;
+}
+
+.legal ul,
+.legal ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.legal ul { list-style: disc; }
+.legal ol { list-style: decimal; }
+
+.legal li {
+  margin: 0.5rem 0;
+  line-height: 1.75rem;
+  font-size: 0.95rem;
+}
+
+.legal a {
+  color: #e4e4e7;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.legal strong {
+  color: #fff;
+}
+
 /*///////// END OF FILE /////////*/
