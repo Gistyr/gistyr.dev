@@ -106,6 +106,14 @@ export default function RootLayout({
               >
                 Terms and Conditions
               </Link>
+              <Link
+                href="https://github.com/Gistyr/gistyr.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-zinc-400 transition-colors underline underline-offset-4"
+              >
+                View this website’s source code
+              </Link>
             </nav>
           </div>
         </footer>
