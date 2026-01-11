@@ -15,11 +15,17 @@
 */
 // ---------------------------------------- //
 
-export default function GobsgPage() {
+import ReactMarkdown from "react-markdown";
+
+export default async function Page() {
+  const res = await fetch("https://gistyr.dev/gobsg.md", { cache: "no-store" });
+  const md = await res.text();
+
   return (
-    <main style={{ padding: "2rem" }}>
-      <h1>GOBSG</h1>
-      <p>Request a commercial license by contacting: contact@gistyr.dev</p>
+    <main className="mx-[10%] min-h-[90vh]">
+      <article className="markdown-body">
+        <ReactMarkdown>{md}</ReactMarkdown>
+      </article>
     </main>
   );
 }
