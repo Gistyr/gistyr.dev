@@ -84,8 +84,17 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="h-16 shrink-0 border-t border-white flex items-center justify-center text-xs">
-          © {new Date().getFullYear()} Gistyr LLC
+        <footer className="h-16 shrink-0 border-t border-white flex items-center justify-center text-md">
+          <div className="flex gap-6 items-center">
+            <span>© {new Date().getFullYear()} Gistyr LLC</span>
+
+            <Link
+              href="/contact"
+              className="hover:text-zinc-400 transition-colors underline underline-offset-4"
+            >
+              Contact
+            </Link>
+          </div>
         </footer>
       </body>
     </html>
