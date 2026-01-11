@@ -18,7 +18,13 @@
 import ReactMarkdown from "react-markdown";
 
 export default async function Page() {
-  const res = await fetch("https://gistyr.dev/gobsg.md", { cache: "no-store" });
+  const res = await fetch(
+    "https://raw.githubusercontent.com/Gistyr/GOBSG/main/README.md",
+    { cache: "no-store" }
+  );
+  if (!res.ok) {
+    throw new Error("Failed to load README.md from GitHub");
+  }
   const md = await res.text();
 
   return (

@@ -15,11 +15,23 @@
 */
 // ---------------------------------------- //
 
-export default function BetterLoggerPage() {
+import ReactMarkdown from "react-markdown";
+
+export default async function Page() {
+  const res = await fetch(
+    "https://raw.githubusercontent.com/Gistyr/GOBSG/main/README.md",
+    { cache: "no-store" }
+  );
+  if (!res.ok) {
+    throw new Error("Failed to load README.md from GitHub");
+  }
+  const md = await res.text();
+
   return (
-    <main style={{ padding: "2rem" }}>
-      <h1>better-logger</h1>
-      <p>better logging</p>
+    <main className="mx-[10%] min-h-[90vh]">
+      <article className="markdown-body">
+        <ReactMarkdown>{md}</ReactMarkdown>
+      </article>
     </main>
   );
 }
